@@ -3,7 +3,7 @@
 PAC-BAYESIAN DOMAIN ADAPTATION (aka PBDA)
 Learning algorithm implementation
 
-@author: Pascal Germain -- http://graal.ift.ulaval.ca/pgermain
+@author: Pascal Germain -- http://researchers.lille.inria.fr/pgermain/
 '''
 from kernel import Kernel, KernelClassifier
 
@@ -85,7 +85,7 @@ class Pbda:
         initial_vector = self.label_vector / float(self.nb_examples)        
         best_cost, best_output = self.perform_one_optimization(initial_vector, 0)
         
-        for i in xrange(1, self.nb_restarts):
+        for i in range(1, self.nb_restarts):
             initial_vector = 2*np.random.rand( self.nb_examples ) -1.0
             cost, optimizer_output = self.perform_one_optimization(initial_vector, i)
             

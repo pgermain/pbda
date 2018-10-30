@@ -1,7 +1,7 @@
 ----------------------------------------------------------------------------------------------------
 PAC-BAYESIAN DOMAIN ADAPTATION (aka PBDA)
 Version 0.901 (August 9, 2013), Released under the BSD-license
-http://graal.ift.ulaval.ca/pbda/ 
+https://github.com/pgermain/pbda 
 ----------------------------------------------------------------------------------------------------
 Author: 
     Pascal Germain. Groupe de Recherche en Apprentissage Automatique de 
@@ -16,7 +16,7 @@ Reference:
 
 Thank you for looking at my code!
 
-This program have been tested using Python 2.7.4 under Linux.
+This program have been tested using Python 3.6 under Linux.
 It requires the NumPy and SciPy libraries.
 
 I prepared three small scripts to use PBDA by the command line:
@@ -29,8 +29,8 @@ python pbda_learn.py --help
 python pbda_classify.py --help
 python pbda_reverse_cv.py --help
 
-For more informations, please visit:  
-http://graal.ift.ulaval.ca/pbda/
+The data used in the paper experiments is available here (in svmlight format):
+http://researchers.lille.inria.fr/pgermain/data/amazon_tfidf_svmlight.tgz
 
 Pascal Germain.
 

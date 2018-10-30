@@ -4,7 +4,7 @@
 PAC-BAYESIAN DOMAIN ADAPTATION (aka PBDA)
 Executable script to use the classifier (to be used after the learning process).
 
-@author: Pascal Germain -- http://graal.ift.ulaval.ca/pgermain
+@author: Pascal Germain -- http://researchers.lille.inria.fr/pgermain/
 '''
 import common
 from pbda import *
@@ -47,7 +47,7 @@ try:
     if args.format == 'matrix':
         test_data = dataset_from_matrix_file(args.test_file)
     elif args.format == 'svmlight':   
-        test_data = dataset_from_svmlight_file(args.test_file)
+        test_data = dataset_from_svmlight_file(args.test_file, classifier.X1_shape[1])
 except:
     print('ERROR: Unable to load test file "' + args.test_file + '".')
     sys.exit(-1)

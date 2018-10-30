@@ -4,7 +4,7 @@
 PAC-BAYESIAN DOMAIN ADAPTATION (aka PBDA)
 Executable script to perform reverse cross-validation
 
-@author: Pascal Germain -- http://graal.ift.ulaval.ca/pgermain
+@author: Pascal Germain -- http://researchers.lille.inria.fr/pgermain/
 '''
 import common
 from pbda import *

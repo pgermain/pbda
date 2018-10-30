@@ -3,7 +3,7 @@
 PAC-BAYESIAN DOMAIN ADAPTATION (aka PBDA)
 common functions.
 
-@author: Pascal Germain -- http://graal.ift.ulaval.ca/pgermain
+@author: Pascal Germain -- http://researchers.lille.inria.fr/pgermain/
 '''
 import argparse
 
@@ -16,8 +16,7 @@ STR_LINE = '-'*TEXT_WIDTH + '\n'
 def print_header(subtext):
     text = STR_LINE + \
         'PAC-BAYESIAN DOMAIN ADAPTATION (aka PBDA) : ' + subtext + '\n' + \
-        'Version ' + STR_VERSION_NUMBER + ' (' + STR_VERSION_DATE + '), Released under the BSD-license\n' + \
-        'http://graal.ift.ulaval.ca/pbda/ \n' + \
+        'Released under the BSD-license\n' + \
         STR_LINE + 'Author: \n' + \
         '    Pascal Germain. Groupe de Recherche en Apprentissage Automatique de l\'Universite Laval (GRAAL).\n\n' + \
         'Reference: \n' + \
@@ -27,6 +26,7 @@ def print_header(subtext):
         STR_LINE
 
     print(text)
+
 
 def custom_formatter(prog):
     formatter = argparse.RawDescriptionHelpFormatter(prog, indent_increment=2, max_help_position=20, width=TEXT_WIDTH)

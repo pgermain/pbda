@@ -4,7 +4,7 @@
 PAC-BAYESIAN DOMAIN ADAPTATION (aka PBDA)
 Executable script to launch the learning algorithm
 
-@author: Pascal Germain -- http://graal.ift.ulaval.ca/pgermain
+@author: Pascal Germain -- http://researchers.lille.inria.fr/pgermain/
 '''
 import common
 from pbda import *
@@ -94,7 +94,7 @@ print('\n... Computing statistics ...')
 ###############################################################################
 stats_dict = algo.get_stats()
 
-for key,val in stats_dict.iteritems():
+for key,val in stats_dict.items():
     print( str(key) + ' = ' + str(val) )
 
 
